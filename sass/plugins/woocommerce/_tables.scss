@@ -54,7 +54,7 @@ table.shop_table_responsive {
 	}
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: $mq-desktop) {
 
 	table.shop_table_responsive {
 

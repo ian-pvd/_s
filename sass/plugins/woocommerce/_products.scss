@@ -17,7 +17,7 @@ ul.products {
 	}
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: $mq-desktop) {
 
 	ul.products {
 
