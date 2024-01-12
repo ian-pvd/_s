@@ -17,9 +17,8 @@
     "url": "https://github.com/ian-pvd/_s/issues"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^19.2.2",
+    "@wordpress/scripts": "^20.0.0",
     "node-sass": "^7.0.1",
-    "stylelint": "^14.2.0",
     "stylelint-order": "^5.0.0"
   },
   "scripts": {
