@@ -27,6 +27,6 @@
     "compile:css": "node-sass src/sass/ -o ./build/ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
     "lint:prod": "stylelint 'src/sass/**/*.scss' --fix",
     "lint:scss": "wp-scripts lint-style 'src/sass/**/*.scss'",
-    "lint:js": "wp-scripts lint-js 'js/*.js'"
+    "lint:js": "wp-scripts lint-js 'src/js/*.js'"
   }
 }
