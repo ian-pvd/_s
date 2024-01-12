@@ -77,10 +77,10 @@
 	}
 
 	&.in-stock {
-		color: $woocommerce__color-success;
+		color: var(--c-woocommerce-success);
 	}
 
 	&.out-of-stock {
-		color: $woocommerce__color-error;
+		color: var(--c-woocommerce-error);
 	}
 }

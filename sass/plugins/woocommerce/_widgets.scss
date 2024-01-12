@@ -22,7 +22,7 @@
 	}
 
 	.ui-slider .ui-slider-handle {
-		background: $color__link;
+		background: var(--c-link);
 		box-sizing: border-box;
 		cursor: ew-resize;
 		height: 1em;
@@ -44,7 +44,7 @@
 	}
 
 	.ui-slider .ui-slider-range {
-		background: $color__link;
+		background: var(--c-link);
 		border: 0;
 		display: block;
 		position: absolute;
