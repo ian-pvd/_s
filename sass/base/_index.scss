@@ -1,20 +1,22 @@
-/* Typography
---------------------------------------------- */
+/**
+ * Base
+ *
+ * HTML elements, Typography, WordPress defaults.
+ */
+
+/* Typography */
 @import "typography";
 
-/* Elements
---------------------------------------------- */
+/* Elements */
 @import "body";
 @import "hr";
 @import "lists";
 @import "media";
 @import "tables";
 
-/* Links
---------------------------------------------- */
+/* Links */
 @import "links";
 
-/* Forms
---------------------------------------------- */
+/* Forms */
 @import "buttons";
 @import "fields";
