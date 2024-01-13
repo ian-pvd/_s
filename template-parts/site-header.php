@@ -26,5 +26,5 @@
 		<?php endif; ?>
 	</div><!-- .site-branding -->
 
-	<?php get_template_part( 'components/site-navigation' ); ?>
+	<?php get_template_part( 'template-parts/site-navigation' ); ?>
 </header><!-- #masthead -->
