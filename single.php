@@ -16,7 +16,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/post', get_post_type() );
+			get_template_part( 'template-parts/article', get_post_type() );
 
 			the_post_navigation(
 				array(
