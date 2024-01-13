@@ -1,8 +1,9 @@
 {
-    "extends": [
-        "plugin:@wordpress/eslint-plugin/esnext"
-    ],
-    "env": {
-        "browser": true
-    }
+	"extends": ["plugin:@wordpress/eslint-plugin/esnext"],
+	"rules": {
+		"indent": ["error", 2]
+	},
+	"env": {
+		"browser": true,
+	}
 }
