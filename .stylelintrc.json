@@ -1,7 +1,7 @@
 {
 	"extends": ["@wordpress/stylelint-config/scss"],
 	"plugins": ["stylelint-order"],
-	"ignoreFiles": ["sass/_normalize.scss"],
+	"ignoreFiles": ["src/sass/normalize/_normalize.scss"],
 	"rules": {
 		"font-family-no-missing-generic-family-keyword": null,
 		"at-rule-empty-line-before": [

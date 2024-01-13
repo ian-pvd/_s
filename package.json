@@ -22,11 +22,11 @@
     "stylelint-order": "^4.1.0"
   },
   "scripts": {
-    "watch": "node-sass sass/ -o ./build/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
-    "compile:prod": "stylelint 'sass/**/*.scss' --fix && node-sass sass/ -o ./build/ --output-style compressed",
-    "compile:css": "node-sass sass/ -o ./build/ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
-    "lint:prod": "stylelint 'sass/**/*.scss' --fix",
-    "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
-    "lint:js": "wp-scripts lint-js 'js/*.js'"
+    "watch": "node-sass src/sass/ -o ./build/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+    "compile:prod": "stylelint 'src/sass/**/*.scss' --fix && node-sass src/sass/ -o ./build/ --output-style compressed",
+    "compile:css": "node-sass src/sass/ -o ./build/ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
+    "lint:prod": "stylelint 'src/sass/**/*.scss' --fix",
+    "lint:scss": "wp-scripts lint-style 'src/sass/**/*.scss'",
+    "lint:js": "wp-scripts lint-js 'src/js/*.js'"
   }
 }
