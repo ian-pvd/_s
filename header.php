@@ -2,7 +2,8 @@
 /**
  * The header for our theme
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
+ * This template displays all of the <head> section and everything up until <main id="primary" class="site-main">
+ *
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
