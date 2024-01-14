@@ -11,7 +11,7 @@
 
 ?>
 
-	<?php get_template_part( 'template-part/site-footer' ); ?>
+	<?php get_template_part( 'template-parts/site-footer' ); ?>
 
 </div><!-- #page -->
 
