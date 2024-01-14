@@ -37,9 +37,9 @@ Clone or download this repository, change its name to something else (like, say,
 4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks and replace with: <code>&nbsp;Megatherium_is_Awesome</code>.
 5. Search for `_s-` to capture prefixed handles and replace with: `megatherium-is-awesome-`.
 6. Search for `_S_` (in uppercase) to capture constants and replace with: `MEGATHERIUM_IS_AWESOME_`.
-7. TODO: Search for `https://github.com/ian-pvd/_s` and replace with the project's git repository: https://github.com/username/megatherium-is-awesome
-8. TODO: Replace theme description, search for `Hi. I'm a starter theme called` and update those fields.
-9. TODO: Search for `underscores"` and replace with the text domain `megatherium-is-awesome"`
+7. Search for `https://github.com/ian-pvd/_s` and replace with your github repository url: https://github.com/USERNAME/megatherium-is-awesome
+8. Search for `Hi. I'm a starter theme called ` to capture all description fields, and replace with your own.
+9. Search for `underscores"` to capture all package names, and replace with your text domain: `megatherium-is-awesome"`
 
 Then, update the stylesheet header in `style.css`, the links in `site-footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
 
