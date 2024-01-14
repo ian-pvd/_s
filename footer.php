@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer
  *
- * Contains all content after the closing of </main><!-- #main -->
+ * Contains all content after closing the </main><!-- #main --> tag.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
