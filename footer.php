@@ -2,6 +2,7 @@
 /**
  * The template for displaying the footer
  *
+ * // TODO: Where is <div id="content"> ? I can't find it in the templates.
  * Contains the closing of the #content div and all content after.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
@@ -11,22 +12,8 @@
 
 ?>
 
-	<?php // TODO: get_template_part( 'components/site-footer' ); ?>
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', '_s' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', '_s' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', '_s' ), '_s', '<a href="https://github.com/ian-pvd/">ian.pvd</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<?php get_template_part( 'template-part/site-footer' ); ?>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

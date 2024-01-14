@@ -41,7 +41,7 @@ Clone or download this repository, change its name to something else (like, say,
 8. TODO: Replace theme description, search for `Hi. I'm a starter theme called` and update those fields.
 9. TODO: Search for `underscores"` and replace with the text domain `megatherium-is-awesome"`
 
-Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
+Then, update the stylesheet header in `style.css`, the links in `site-footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
 
 ### Setup
 
