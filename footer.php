@@ -2,8 +2,7 @@
 /**
  * The template for displaying the footer
  *
- * // TODO: Where is <div id="content"> ? I can't find it in the templates.
- * Contains the closing of the #content div and all content after.
+ * Contains all content after the closing of </main><!-- #main -->
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *

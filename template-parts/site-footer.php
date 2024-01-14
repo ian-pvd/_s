@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the site footer
+ * The template for displaying the site footer.
  *
  * @package _s
  */
