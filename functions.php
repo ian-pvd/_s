@@ -16,6 +16,8 @@ if ( ! defined( '_S_VERSION' ) ) {
 define( '_S_TEMPLATE_URL', get_template_directory_uri() );
 define( '_S_PATH', get_template_directory() . '/' );
 define( '_S_INCLUDES', _S_PATH . 'inc' );
+define( '_S_BUILD_URL', _S_TEMPLATE_URL . '/build' );
+define( '_S_SRC_URL', _S_TEMPLATE_URL . '/src' );
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -26,29 +28,29 @@ define( '_S_INCLUDES', _S_PATH . 'inc' );
  */
 function _s_setup() {
 	/*
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on _s, use a find and replace
-		* to change '_s' to the name of your theme in all the template files.
-		*/
+	 * Make theme available for translation.
+	 * Translations can be filed in the /languages/ directory.
+	 * If you're building a theme based on _s, use a find and replace
+	 * to change '_s' to the name of your theme in all the template files.
+	 */
 	load_theme_textdomain( '_s', _S_PATH . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
 	/*
-		* Let WordPress manage the document title.
-		* By adding theme support, we declare that this theme does not use a
-		* hard-coded <title> tag in the document head, and expect WordPress to
-		* provide it for us.
-		*/
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 */
 	add_theme_support( 'title-tag' );
 
 	/*
-		* Enable support for Post Thumbnails on posts and pages.
-		*
-		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		*/
+	 * Enable support for Post Thumbnails on posts and pages.
+	 *
+	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+	 */
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
@@ -59,9 +61,9 @@ function _s_setup() {
 	);
 
 	/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
+	 * Switch default core markup for search form, comment form, and comments
+	 * to output valid HTML5.
+	 */
 	add_theme_support(
 		'html5',
 		array(
@@ -143,10 +145,10 @@ add_action( 'widgets_init', '_s_widgets_init' );
  * Enqueue scripts and styles.
  */
 function _s_scripts() {
-	wp_enqueue_style( '_s-style', _S_TEMPLATE_URL . '/build/style.css', array(), _S_VERSION );
+	wp_enqueue_style( '_s-style', _S_BUILD_URL . '/style.css', array(), _S_VERSION );
 	wp_style_add_data( '_s-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( '_s-navigation', _S_TEMPLATE_URL . '/src/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( '_s-navigation', _S_SRC_URL . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

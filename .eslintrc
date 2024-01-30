@@ -1,7 +1,7 @@
 {
 	"extends": ["plugin:@wordpress/eslint-plugin/esnext"],
 	"rules": {
-		"indent": ["error", 2]
+		"indent": ["warn", "tab"]
 	},
 	"env": {
 		"browser": true,

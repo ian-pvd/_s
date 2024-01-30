@@ -35,17 +35,15 @@
 				width: 200px;
 			}
 
+			/*
 			:hover > a,
 			.focus > a {
-
-				/* Link Styles */
 			}
 
 			a:hover,
 			a.focus {
-
-				/* Link Styles */
 			}
+			*/
 		}
 
 		li:hover > ul,
@@ -57,11 +55,11 @@
 	li {
 		position: relative;
 
+		/*
 		&:hover > a,
 		&.focus > a {
-
-			/* Link Styles */
 		}
+		*/
 	}
 
 	a {
@@ -69,13 +67,13 @@
 		text-decoration: none;
 	}
 
+	/*
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
-
-		/* Link Styles */
 	}
+	*/
 }
 
 /* Small menu. */
@@ -84,7 +82,7 @@
 	display: block;
 }
 
-@media screen and (min-width: $mq-tablet) {
+@media screen and (min-width: $mq-medium) {
 
 	.menu-toggle {
 		display: none;
@@ -99,7 +97,7 @@
 .posts-navigation,
 .post-navigation {
 
-	.site-main & {
+	#primary & {
 		margin: 0 0 1.5em;
 	}
 

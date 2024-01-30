@@ -15,7 +15,10 @@
 /* Utilities - Helpers, WordPress defaults. */
 @import "utilities/index";
 
-/* Templates - WordPress page template layouts. */
+/* Site - Site wrapper and page layouts. */
+@import "site/index";
+
+/* Templates - WordPress templates: index, post, archive, etc. */
 @import "templates/index";
 
 /* Components - Partials and markup used in templates. */
