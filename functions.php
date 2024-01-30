@@ -16,6 +16,8 @@ if ( ! defined( '_S_VERSION' ) ) {
 define( '_S_TEMPLATE_URL', get_template_directory_uri() );
 define( '_S_PATH', get_template_directory() . '/' );
 define( '_S_INCLUDES', _S_PATH . 'inc' );
+define( '_S_BUILD_URL', _S_TEMPLATE_URL . '/build' );
+define( '_S_SRC_URL', _S_TEMPLATE_URL . '/src' );
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -143,10 +145,10 @@ add_action( 'widgets_init', '_s_widgets_init' );
  * Enqueue scripts and styles.
  */
 function _s_scripts() {
-	wp_enqueue_style( '_s-style', _S_TEMPLATE_URL . '/build/style.css', array(), _S_VERSION );
+	wp_enqueue_style( '_s-style', _S_BUILD_URL . '/style.css', array(), _S_VERSION );
 	wp_style_add_data( '_s-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( '_s-navigation', _S_TEMPLATE_URL . '/src/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( '_s-navigation', _S_SRC_URL . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
