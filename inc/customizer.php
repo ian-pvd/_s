@@ -19,14 +19,14 @@ function _s_customize_register( $wp_customize ) {
 		$wp_customize->selective_refresh->add_partial(
 			'blogname',
 			array(
-				'selector'        => '.site-title a',
+				'selector'        => '.site-header__title a',
 				'render_callback' => '_s_customize_partial_blogname',
 			)
 		);
 		$wp_customize->selective_refresh->add_partial(
 			'blogdescription',
 			array(
-				'selector'        => '.site-description',
+				'selector'        => '.site-header__description',
 				'render_callback' => '_s_customize_partial_blogdescription',
 			)
 		);
