@@ -12,7 +12,6 @@
 ?>
 
 	</div><!-- #site-main -->
-
 	<?php get_template_part( 'template-parts/site-footer' ); ?>
 
 </div><!-- #site -->
