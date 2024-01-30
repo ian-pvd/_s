@@ -11,9 +11,11 @@
 
 ?>
 
-	<?php get_template_part( 'template-part/site-footer' ); ?>
+	</div><!-- #site-main -->
 
-</div><!-- #page -->
+	<?php get_template_part( 'template-parts/site-footer' ); ?>
+
+</div><!-- #site -->
 
 <?php wp_footer(); ?>
 

@@ -118,7 +118,7 @@ if ( ! function_exists( '_s_woocommerce_wrapper_before' ) ) {
 	 */
 	function _s_woocommerce_wrapper_before() {
 		?>
-			<main id="primary" class="site-main">
+			<main id="main" class="main main--woocommerce">
 		<?php
 	}
 }
@@ -128,7 +128,7 @@ if ( ! function_exists( '_s_woocommerce_wrapper_after' ) ) {
 	/**
 	 * After Content.
 	 *
-	 * Closes the wrapping divs.
+	 * Closes the wrapping div.
 	 *
 	 * @return void
 	 */
