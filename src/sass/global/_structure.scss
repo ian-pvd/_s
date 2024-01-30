@@ -1,2 +1,6 @@
-$size__site-main: 100%;
-$size__site-sidebar: 25%;
+:root {
+	--size-site-content: 640px; // @see: _s_content_width() in functions.php
+	--size-site-max: 100%;
+	--size-site-sidebar: 320px;
+	--size-gap: 2rem;
+}

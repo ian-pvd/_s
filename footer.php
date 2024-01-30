@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer
  *
- * Contains all content after closing the </main><!-- #main --> tag.
+ * Contains all content after closing the </main><!-- #primary --> tag.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
@@ -11,9 +11,10 @@
 
 ?>
 
+	</div><!-- #site-main -->
 	<?php get_template_part( 'template-parts/site-footer' ); ?>
 
-</div><!-- #page -->
+</div><!-- #site -->
 
 <?php wp_footer(); ?>
 

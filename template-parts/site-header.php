@@ -7,24 +7,21 @@
 
 ?>
 <header id="masthead" class="site-header">
-	<div class="site-branding">
+	<div class="site-header__branding">
+
+		<?php the_custom_logo(); ?>
+
+		<span class="site-header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+
 		<?php
-		the_custom_logo();
-		if ( is_front_page() && is_home() ) :
-			?>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php
-		else :
-			?>
-			<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-		endif;
 		$_s_description = get_bloginfo( 'description', 'display' );
-		if ( $_s_description || is_customize_preview() ) :
-			?>
-			<p class="site-description"><?php echo $_s_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+		if ( $_s_description || is_customize_preview() ) : ?>
+
+			<p class="site-header__description"><?php echo $_s_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+
 		<?php endif; ?>
-	</div><!-- .site-branding -->
+
+	</div><!-- .site-header__branding -->
 
 	<?php get_template_part( 'template-parts/site-navigation' ); ?>
 </header><!-- #masthead -->

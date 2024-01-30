@@ -1,0 +1,51 @@
+/**
+ * Site Layout
+ *
+ */
+
+#site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#site-main {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-gap);
+	margin: 0 auto;
+	max-width: var(--size-site-max);
+
+	@media screen and (min-width: $mq-large) { // is this the upstream breakpoint?
+
+		/* Template Layout Options */
+
+		// Uncomment this section for a sidebar on right side of your content.
+		align-items: unset;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 0 auto;
+
+		// Uncomment this section for a sidebar on left side of your content.
+		// align-items: unset;
+		// flex-direction: row-reverse;
+		// justify-content: center;
+	}
+}
+
+#primary {
+	max-width: var(--size-site-content);
+	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	width: 100%;
+}
+
+#secondary {
+	margin: 0 auto;
+	width: var(--size-site-sidebar);
+}
+
+#colophon {
+	margin-top: auto;
+}

@@ -43,7 +43,7 @@ add_action( 'after_setup_theme', '_s_woocommerce_setup' );
  * @return void
  */
 function _s_woocommerce_scripts() {
-	wp_enqueue_style( '_s-woocommerce-style', get_template_directory_uri() . '/build/woocommerce.css', array(), _S_VERSION );
+	wp_enqueue_style( '_s-woocommerce-style', _S_BUILD_URL . '/woocommerce.css', array(), _S_VERSION );
 
 	$font_path   = WC()->plugin_url() . '/assets/fonts/';
 	$inline_font = '@font-face {
@@ -118,7 +118,7 @@ if ( ! function_exists( '_s_woocommerce_wrapper_before' ) ) {
 	 */
 	function _s_woocommerce_wrapper_before() {
 		?>
-			<main id="primary" class="site-main">
+			<main id="primary" class="main main--woocommerce">
 		<?php
 	}
 }
@@ -128,13 +128,13 @@ if ( ! function_exists( '_s_woocommerce_wrapper_after' ) ) {
 	/**
 	 * After Content.
 	 *
-	 * Closes the wrapping divs.
+	 * Closes the wrapping div.
 	 *
 	 * @return void
 	 */
 	function _s_woocommerce_wrapper_after() {
 		?>
-			</main><!-- #main -->
+			</main><!-- #primary -->
 		<?php
 	}
 }
