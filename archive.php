@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<main id="main" class="main main--archive">
+<main id="primary" class="main main--archive">
 
 	<?php if ( have_posts() ) : ?>
 
@@ -44,7 +44,7 @@ get_header();
 	endif;
 	?>
 
-</main><!-- #main -->
+</main><!-- #primary -->
 
 <?php
 get_sidebar();

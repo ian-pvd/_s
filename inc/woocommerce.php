@@ -118,7 +118,7 @@ if ( ! function_exists( '_s_woocommerce_wrapper_before' ) ) {
 	 */
 	function _s_woocommerce_wrapper_before() {
 		?>
-			<main id="main" class="main main--woocommerce">
+			<main id="primary" class="main main--woocommerce">
 		<?php
 	}
 }
@@ -134,7 +134,7 @@ if ( ! function_exists( '_s_woocommerce_wrapper_after' ) ) {
 	 */
 	function _s_woocommerce_wrapper_after() {
 		?>
-			</main><!-- #main -->
+			</main><!-- #primary -->
 		<?php
 	}
 }
